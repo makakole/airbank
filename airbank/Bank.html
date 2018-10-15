@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>AirBank</title>
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Asap|Pinyon+Script|Sacramento" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+
+      
+      <div class="name">
+
+        AirBank
+        
+
+        <div class="options"><img  src="img/options.png"></div>
+
+      </div>
+
+    </nav>
+
+      <div class="content">
+
+        <table style="width:100%;" id="bank-balance">
+          <tr><td colspan="2"><center><h3>Bank Balance</h3></center></td></tr>
+          <tr>
+            <td class="values"><center>Airtime</center></td>
+            <td class="values"><center>R 89.00</center></td>
+          </tr>
+
+          <tr>
+            <td class="values"><center>Data</center></td>
+            <td class="values"><center>20 MB</center></td>
+          </tr>
+
+          <tr>
+            <td class="values"><center>Advance</center></td>
+            <td class="values"><center>R 10.00</center></td>
+          </tr>
+        </table>
+
+
+        <table style="width:100%;display:none;" id="sim-balance">
+          <tr><td colspan="2"><center><h3>Sim Balance</h3></center></td></tr>
+          <tr>
+            <td class="values"><center>Airtime</center></td>
+            <td class="values"><center>R 5.00</center></td>
+          </tr>
+
+          <tr>
+            <td class="values"><center>Data</center></td>
+            <td class="values"><center>0.00 MB</center></td>
+          </tr>
+
+          <tr>
+            <td class="values"><center>Advance</center></td>
+            <td class="values"><center>R 0.00</center></td>
+          </tr>
+        </table>
+
+      </div>
+          <center><div class="navi" id="next-div"><button id="next">>></button></div></center>
+          <center><div class="navi" id="prev-div" style="display:none;"><button id="prev"><<</button></div></center>
+      <div class="buttons" id="fbutt">
+
+        <center><button class="trans">Transfer</button><button id="submit">Transact</button></center>
+        <center><button id="submit">Purchase</button><button id="submit">Debit</button></center>
+
+      </div>
+
+      <div class="buttons" id="sbutt" style="display:none;">
+
+        <center><button class="trans">Transfer</button><button id="submit">Transact</button></center>
+        <center><button id="submit">Purchase</button><button id="submit">Debit</button></center>
+
+      </div>
+  </body>
+
+  
+  <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+</html>

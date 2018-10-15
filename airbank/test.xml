@@ -1,0 +1,49 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v2="http://www.huawei.com.cn/schema/common/v2_1" xmlns:loc="http://www.csapi.org/schema/parlayx/sms/send/v2_2/local">
+
+   <soapenv:Header>
+
+      <v2:RequestSOAPHeader>
+
+         <v2:spId>270110000648</v2:spId>
+
+         <v2:spPassword>becfd915954f7ff327c96968a533499f</v2:spPassword>
+
+         <v2:bundleID/>
+
+         <v2:serviceId/>
+
+         <v2:timeStamp>20181013124019</v2:timeStamp>
+
+         <v2:OA>tel:27783208650</v2:OA>
+
+         <v2:FA>tel:27783208650</v2:FA>
+
+      </v2:RequestSOAPHeader>
+
+   </soapenv:Header>
+
+   <soapenv:Body>
+
+      <loc:sendSms>
+
+         <loc:addresses>tel:27783208650</loc:addresses>
+
+         <loc:senderName>8393006881433</loc:senderName>
+
+         <loc:message>Exe Its Peace Makinita Here are you good?</loc:message>
+
+      </loc:sendSms>
+
+      <loc:receiptRequest>
+
+         <endpoint>http://10.204.55.244:8888/notifySmsDeliveryReceipt</endpoint>
+
+         <interfaceName>SmsNotification</interfaceName>
+
+         <correlator>12344</correlator>
+
+      </loc:receiptRequest>
+
+   </soapenv:Body>
+
+</soapenv:Envelope>

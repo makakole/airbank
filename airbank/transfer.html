@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>AirBank</title>
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Asap|Pinyon+Script|Sacramento" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mob.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+
+      
+      <div class="name">
+
+        AirBank
+        
+
+        <div class="options"><img  src="img/options.png"></div>
+
+      </div>
+
+    </nav>
+
+      <div class="content">
+
+        <table style="width:100%;" id="bank-balance">
+          <tr><td colspan="2"><center><h3>Transfer</h3></center></td></tr>
+          <tr>
+            <td class="values"><center>From</center></td>
+            <td class="values"><center><select id="from">
+                <option>Choose Account</option>
+                <option>AirBank Account</option>
+                <option>Sim Card</option>
+            </select></center></td>
+          </tr>
+
+          <tr>
+            <td class="values"><center>To</center></td>
+            <td class="values"><center>
+              <select id="to">
+                <option>Choose Account</option>
+                <option>AirBank Account</option>
+                <option>Sim Card</option>
+            </select>
+            </center></td>
+          </tr>
+
+          <tr>
+            <td class="values" colspan="2">
+                <center><div class="input-field">
+                <input type="text" id="name" required />
+                <label for="name">Enter Amount:</label>
+              </div></center>
+            </td>
+            
+          </tr>
+        </table>
+
+      </div>
+          
+      <div class="buttons" id="fbutt">
+
+        <center><button id="trans">Transfer</button></center>
+
+      </div>
+
+      <div class="loading" style="display:none;">
+          <img src="img/success.gif">
+      </div>
+  </body>
+
+  
+  <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+</html>

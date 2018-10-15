@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:loc="http://www.csapi.org/schema/osg/ussd/notification_manager/v1_0/local">
+   <soapenv:Header>
+      <tns:RequestSOAPHeader xmlns:tns="http://www.huawei.com.cn/schema/common/v2_1">
+               <spId>270110000648</spId>
+      <spPassword>becfd915954f7ff327c96968a533499f</spPassword>
+         <tns:serviceId></tns:serviceId>
+         <tns:timeStamp>20181013124019</tns:timeStamp>
+      </tns:RequestSOAPHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <loc:startUSSDNotification>
+         <loc:reference>
+            <endpoint>http://10.204.55.244:8888/notifyUssdReception</endpoint>
+            <interfaceName>startUssdNotification</interfaceName>
+            <correlator>1233217686888768</correlator>
+         </loc:reference>
+         <loc:ussdServiceActivationNumber>156*8378*336</loc:ussdServiceActivationNumber>
+         <loc:criteria>default</loc:criteria>
+      </loc:startUSSDNotification>
+   </soapenv:Body>
+</soapenv:Envelope>
